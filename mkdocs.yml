@@ -1,4 +1,118 @@
-site_name: My Docs
+site_name: XXWZLN's Home
+site_url: https://xxwzln.github.io/
+copyright: Copyright &copy; 2023 - 2023 <a href="https://github.com/XXWZLN" target="_blank" rel="noopener">XXWZLN</a>
+# repo_url: https://github.com/XXWZLN/XXWZLN.github.io
+# repo_name: XXWZLN's page
 
 theme:
   name: material
+  language: "zh"
+  custom_dir: overrides
+
+  font:
+    text: Roboto
+    code: JetBrains Mono
+
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      info: fontawesome/solid/anchor
+      note: fontawesome/solid/pen-nib
+      abstract: fontawesome/solid/list
+      tip: fontawesome/solid/lightbulb
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: material/alien
+      danger: fontawesome/solid/virus
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/link
+
+  # color templatg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Switch to system preference   
+
+  features:
+    - content.code.copy
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.path
+    - navigation.indexes
+
+markdown_extensions:
+  - admonition
+
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+  # display mermaid
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # emoji
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - footnotes
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+  # - pymdownx.details
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/XXWZLN
+    # - icon: fontawesome/solid/rss
+    #   link: https://blog.tonycrane.cc/
+    # - icon: fontawesome/solid/home
+    #   link: https://tonycrane.cc/
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+#   - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - home:
+      - home: "index.md"
+  - else:
+      - hello: "p2.md"
+      - stitp: "p3.md"
+      - http-test: "html-test.md"
+  - Usaf: 
+    - en: "en.md"

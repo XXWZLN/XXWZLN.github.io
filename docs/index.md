@@ -1,18 +1,24 @@
-# Welcome to MkDocs
+---
+hide:
+  - navigation
+  - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+# ヽ( ° ▽°)ノ Hi!
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+!!! note "" 
 
-## Project layout
+!!! note inline end ""
+    <center>
+        **🥺 如果非要支持一下的话……这个二维码也不是不可以扫！**
+    </center>
+    <figure markdown align="center">
+    ![](_assets/wechatPayQRCode.png){ width="200px" }
+    <figure>
 
-    你好啊和未回复biu哈师大发撒是滴哦发我阿斯蒂付i吧温带季风
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+??? note "Phasellus posuere in sem ut cursus"
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+    
