@@ -39,8 +39,8 @@ git config --global --add push.autoSetupRemote true
 
 | 匹配示例     | 解释                                                                           |
 | ------------ | ------------------------------------------------------------------------------ |
-| bin/         | 忽略当前路径下的 bin 文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件。 |
-| /bin         | 忽略根目录下的 bin 文件。                                                      |
+| bin/         |  忽略项目的所有路径下的 bin 目录及其内部文件|
+| /bin         |  仅忽略根目录下的 bin 目录及其内部文件                               |
 | /*.c         | 忽略 cat.c，不忽略 build/cat.c。                                               |
 | debug/*.obj  | 忽略 debug/io.obj，不忽略 debug/common/io.obj 和 tools/debug/io.obj。          |
 | **/foo       | 忽略 /foo, a/foo, a/b/foo 等。                                                 |
