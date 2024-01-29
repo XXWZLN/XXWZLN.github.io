@@ -3,3 +3,11 @@
   /* --md-primary-fg-color--light: #ECB7B7; */
   /* --md-primary-fg-color--dark:  #90030C; */
 }
+
+body {
+  font-family: "LXGW WenKai", sans-serif;
+}
+
+:root {
+  --md-code-font: "LXGW WenKai"
+}

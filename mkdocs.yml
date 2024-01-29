@@ -4,14 +4,31 @@ copyright: Copyright &copy; 2023 - 2023 <a href="https://github.com/XXWZLN" targ
 # repo_url: https://github.com/XXWZLN/XXWZLN.github.io
 # repo_name: XXWZLN's page
 
+
+nav:
+  - home: 
+      - index.md
+  - notes:
+      - Git: 
+        - notes/Git/Git.md
+      - CMake: 
+        - notes/CMake/CMake.md
+      - "微机原理和接口技术": 
+        - notes/assembly/index.md
+        - notes/assembly/assembly.md
+        - notes/assembly/weiji.md
+  # - Project:
+  # - About: 
+
+
 theme:
   name: material
   language: "zh"
   custom_dir: overrides
 
-  font:
-    text: Roboto
-    code: JetBrains Mono
+  # font:
+  #   text: Roboto
+  #   code: JetBrains Mono
 
   icon:
     repo: fontawesome/brands/github
@@ -47,12 +64,18 @@ theme:
         name: Switch to system preference   
 
   features:
-    - content.code.copy
-    - navigation.sections
-    - navigation.tabs
+    - toc.follow
+    - search.share
+    - search.suggest
+    - search.highlight
     - navigation.top
-    - navigation.path
+    - navigation.tabs
+    - navigation.footer
     - navigation.indexes
+    - navigation.tracking
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
 
 markdown_extensions:
   - admonition
@@ -88,7 +111,16 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
 
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   # - pymdownx.details
+
+plugins:
+  - statistics:
+      page_check_metadata: comments
+  - search
+
 
 extra:
   social:
@@ -101,18 +133,9 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
 extra_javascript:
 #   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
-nav:
-  - home:
-      - home: "index.md"
-  - else:
-      - hello: "p2.md"
-      - stitp: "p3.md"
-      - http-test: "html-test.md"
-  - Usaf: 
-    - en: "en.md"
