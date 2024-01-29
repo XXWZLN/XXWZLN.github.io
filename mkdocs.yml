@@ -117,8 +117,8 @@ markdown_extensions:
   # - pymdownx.details
 
 plugins:
-  - statistics:
-      page_check_metadata: comments
+  # - statistics:
+  #     page_check_metadata: comments
   - search
 
 
