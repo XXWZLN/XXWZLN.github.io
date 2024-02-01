@@ -167,14 +167,14 @@ set_target_properties(<target-name> PROPERTIES
 
 ![image-20240126151430009](./assets/image-20240126151430009.png)
 
-> # extern 的小知识
->
+### extern 的小知识
+
 > extern 只会用在变量的声明时，函数和类的声明不需要
 >
 > `extern "c"` 和 `extern` 没有关系，[C++项目中的extern "C" {} - 吴秦 - 博客园 (cnblogs.com)](https://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html)
 >
 > ```c++
-> // 在头文件中声明全局变量
+>// 在头文件中声明全局变量
 > // Header.h
 > extern int globalVariable;
 > 
@@ -190,10 +190,10 @@ set_target_properties(<target-name> PROPERTIES
 > using namespace std;
 > 
 > int main() {
->     cout << globalVariable << endl;  // 输出 42
->     return 0;
-> }
-> 
+>  cout << globalVariable << endl;  // 输出 42
+>  return 0;
+>    }
+>    
 > ```
 
 ## 库
