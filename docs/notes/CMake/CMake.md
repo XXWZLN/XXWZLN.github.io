@@ -174,7 +174,7 @@ set_target_properties(<target-name> PROPERTIES
 > `extern "c"` 和 `extern` 没有关系，[C++项目中的extern "C" {} - 吴秦 - 博客园 (cnblogs.com)](https://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html)
 >
 > ```c++
->// 在头文件中声明全局变量
+> // 在头文件中声明全局变量
 > // Header.h
 > extern int globalVariable;
 > 

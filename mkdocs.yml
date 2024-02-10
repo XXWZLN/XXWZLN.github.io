@@ -4,22 +4,23 @@ copyright: Copyright &copy; 2023 - 2023 <a href="https://github.com/XXWZLN" targ
 # repo_url: https://github.com/XXWZLN/XXWZLN.github.io
 # repo_name: XXWZLN's page
 
-
 nav:
-  - home: 
+  - Home:
       - index.md
-  - notes:
-      - Git: 
-        - notes/Git/Git.md
-      - CMake: 
-        - notes/CMake/CMake.md
-      - "微机原理和接口技术": 
-        - notes/assembly/index.md
-        - notes/assembly/assembly.md
-        - notes/assembly/weiji.md
-  # - Project:
-  # - About: 
+  - Notes:
+      - Git:
+          - notes/Git/Git.md
+      - CMake:
+          - notes/CMake/CMake.md
+      - "微机原理和接口技术":
+          - notes/assembly/index.md
+          - notes/assembly/assembly.md
+          - notes/assembly/weiji.md
 
+  - Projects:
+      - project/acr-unity.md
+      - project/harmonyAPP.md
+  # - About:
 
 theme:
   name: material
@@ -61,7 +62,7 @@ theme:
       accent: indigo
       toggle:
         icon: material/lightbulb
-        name: Switch to system preference   
+        name: Switch to system preference
 
   features:
     - toc.follow
@@ -81,7 +82,7 @@ markdown_extensions:
   - admonition
 
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.highlight:
@@ -93,8 +94,9 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  # emoji
+          format: !!python/name:pymdownx.superfences.fence_code_format # emoji
+
+
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -121,7 +123,6 @@ plugins:
   #     page_check_metadata: comments
   - search
 
-
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -136,6 +137,6 @@ extra_css:
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
 extra_javascript:
-#   - javascripts/mathjax.js
+  #   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
