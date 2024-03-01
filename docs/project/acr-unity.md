@@ -8,9 +8,9 @@
 
 下图显示的左边手部模型在 Unity 场景中呈现的效果，右边是 webCamera 捕捉的画面
 
-![PixPin_2024-02-03_21-02-22](./assets/PixPin_2024-02-03_21-02-22.gif)
+![PixPin_2024-02-03_21-02-22](./assets/handmesh-demo1.gif)
 
-![PixPin_2024-02-03_21-04-43](./assets/PixPin_2024-02-03_21-04-43.gif)
+![PixPin_2024-02-03_21-04-43](./assets/handmesh-demo2.gif)
 
 ## Related Work
 
